@@ -1,3 +1,7 @@
+#Código que mide la tasa de error en un modelo predictivo
+
+
+
 library(kernlab)
 data(spam)
 str(spam[,1:5])
