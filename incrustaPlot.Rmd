@@ -1,0 +1,38 @@
+---
+title: "incrustaPlot"
+author: "Gabriel General"
+date: "31-01-2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+Este es un archivo que se utiliza para realizar investigación reproducible
+Crearemos código en R el cual podrá mostrar o no el código fuente
+y podrá incustrar imágenes como gráficos (plot)
+
+
+## Presentación
+Primero simularemos los datos en un chunk de código
+```{r simulateData, echo=TRUE}
+
+x <- rnorm(100); y <- x + rnorm(100, sd = 0.5)
+
+
+```
+
+## Incrustamos en html el grafo
+
+Gráfico de los datos
+
+```{r grafico, fig.height= 4}
+par(mar = c(5,4,1,1), las = 1)
+plot(x,y, main ="Mi data simulada")
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
