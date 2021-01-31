@@ -40,3 +40,13 @@ fit <- lm(Ozone ~ Wind + Solar.R + Temp, data = airquality)
 summary(fit)
 
 ```
+
+Generamos una tabla de coeficientes de regresión con xtable
+
+``` {r showtable, results = "asis"}
+library(xtable)
+xt <- xtable(summary(fit))
+print(xt, type = "html")
+```
+
+

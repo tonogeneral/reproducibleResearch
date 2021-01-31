@@ -245,6 +245,99 @@ summary(fit)</code></pre>
 ##   (42 observations deleted due to missingness)
 ## Multiple R-squared:  0.6059, Adjusted R-squared:  0.5948 
 ## F-statistic: 54.83 on 3 and 107 DF,  p-value: &lt; 2.2e-16</code></pre>
+<p>Generamos una tabla de coeficientes de regresión con xtable</p>
+<pre class="r"><code>library(xtable)</code></pre>
+<pre><code>## Warning: package &#39;xtable&#39; was built under R version 4.0.3</code></pre>
+<pre class="r"><code>xt &lt;- xtable(summary(fit))
+print(xt, type = &quot;html&quot;)</code></pre>
+<!-- html table generated in R 4.0.2 by xtable 1.8-4 package -->
+<!-- Sun Jan 31 20:03:32 2021 -->
+<table border="1">
+<tr>
+<th>
+</th>
+<th>
+Estimate
+</th>
+<th>
+Std. Error
+</th>
+<th>
+t value
+</th>
+<th>
+Pr(&gt;|t|)
+</th>
+</tr>
+<tr>
+<td align="right">
+(Intercept)
+</td>
+<td align="right">
+-64.3421
+</td>
+<td align="right">
+23.0547
+</td>
+<td align="right">
+-2.79
+</td>
+<td align="right">
+0.0062
+</td>
+</tr>
+<tr>
+<td align="right">
+Wind
+</td>
+<td align="right">
+-3.3336
+</td>
+<td align="right">
+0.6544
+</td>
+<td align="right">
+-5.09
+</td>
+<td align="right">
+0.0000
+</td>
+</tr>
+<tr>
+<td align="right">
+Solar.R
+</td>
+<td align="right">
+0.0598
+</td>
+<td align="right">
+0.0232
+</td>
+<td align="right">
+2.58
+</td>
+<td align="right">
+0.0112
+</td>
+</tr>
+<tr>
+<td align="right">
+Temp
+</td>
+<td align="right">
+1.6521
+</td>
+<td align="right">
+0.2535
+</td>
+<td align="right">
+6.52
+</td>
+<td align="right">
+0.0000
+</td>
+</tr>
+</table>
 </div>
 
 
